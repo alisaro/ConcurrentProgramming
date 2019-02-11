@@ -1,4 +1,7 @@
-﻿using System;
+﻿//This program calculate the fuction PerfectNumber showing the time that spent in this calculation
+//in each threads
+
+using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
