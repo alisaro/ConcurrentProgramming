@@ -1,4 +1,5 @@
-* LINQ_4.cs concurrent programming
+* LINQ_4.cs LINQ Query
+
 * PerfectNumber.cs with parallel for
 * Program3threads.cs multithreads
 * ForLoop.cs
