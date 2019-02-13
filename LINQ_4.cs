@@ -8,6 +8,8 @@ public class Program
 {
     public static void Main()
     {
+        // The Three Parts of a LINQ Query:
+        // 1. Data source.
         // Student collection
         List<Student> students = new List<Student>() {
                 new Student() { Country = "Spain", Name = "Zbych", Marks = 13, Faculty = "Informatics"} ,
@@ -30,11 +32,15 @@ public class Program
         Console.WriteLine("(Ex 4.) Candidates by faculties:");
         //-----------------------------------
 
+        // 2. Query creation.
+        // result2 is an IEnumerable<students> groups by Country, where the students
+        //of each Country appear in order descending by their marks
         var result2 = from s in students
                           //where s.Marks > 11
                       orderby s.Country, s.Marks descending
                       group s by s.Country;
 
+        // 3. Query execution.
         //iterate each group        
         foreach (var country in result2)
         {
@@ -50,6 +56,8 @@ public class Program
         Console.WriteLine("----------------------------------------");
         Console.WriteLine("(Ex 5.) Average for all faculties:");
 
+        // 2. Query creation.
+        // result2 is an IEnumerable<groups<s.County, s.AverageMarks>>
         var result3 =
             from s in students
             group s by s.Country into groups
@@ -60,7 +68,7 @@ public class Program
                 AverageMarks = groups.Max(s => s.Marks),
             };
 
-
+        // 3. Query execution.
         foreach (var f in result3)
         {
             Console.WriteLine("{0} \t  {1}", f.Country, f.AverageMarks);
