@@ -1,5 +1,5 @@
 * LINQ_4.cs  LINQ Query
-*  The following example shows how the 
+  * The following example shows how the 
 three parts of a query operation are expressed 
 in source code. The example uses a collection Student as a data source.
 
