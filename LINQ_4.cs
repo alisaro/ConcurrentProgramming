@@ -33,6 +33,7 @@ public class Program
         //-----------------------------------
 
         // 2. Query creation.
+        //LINQ Query Syntax
         // result2 is an IEnumerable<students> groups by Country, where the students
         //of each Country appear in order descending by their marks
         var result2 = from s in students
@@ -69,6 +70,7 @@ public class Program
             };
 
         // 3. Query execution.
+        //iterate each group 
         foreach (var f in result3)
         {
             Console.WriteLine("{0} \t  {1}", f.Country, f.AverageMarks);
