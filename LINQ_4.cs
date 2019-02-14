@@ -57,7 +57,7 @@ public class Program
         Console.WriteLine("(Ex 5.) Average for all faculties:");
 
         // 2. Query creation.
-        // result2 is an IEnumerable<groups<s.County, s.AverageMarks>>
+        // result2 is a collections of objects(Countries)
         var result3 =
             from s in students
             group s by s.Country into groups
