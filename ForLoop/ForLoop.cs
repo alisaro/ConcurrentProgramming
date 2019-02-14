@@ -25,10 +25,12 @@ namespace ExampleForLoop
             for (int i = 0; i < 5; i++)
             {
                 Stopwatch sw = Stopwatch.StartNew();
+                //Execution in serial form
                 Serial(array, 2);
                 Console.WriteLine("Serial: {0:f2} s", sw.Elapsed.TotalSeconds);
 
                 sw = Stopwatch.StartNew();
+                //Execution en parallel form
                 ParallelFor(array, 2);
                 Console.WriteLine("Parallel.For: {0:f2} s", sw.Elapsed.TotalSeconds);
 
@@ -38,6 +40,7 @@ namespace ExampleForLoop
         }
 
 
+        //In each iteration the operation is do it by the same thread
         static void Serial(double[] array, double factor)
         {
             for (int i = 0; i < array.Length; i++)
@@ -47,7 +50,8 @@ namespace ExampleForLoop
 
         }
 
-            static void ParallelFor(double[] array, double factor)
+        // the source collection is partitioned so that multiple threads can operate on different segments concurrently.
+        static void ParallelFor(double[] array, double factor)
         {
             Parallel.For(
                 0, array.Length, i => { array[i] = array[i] * factor; });
