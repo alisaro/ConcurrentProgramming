@@ -54,4 +54,4 @@ foreach (var f in result3)
         }
 ```
  ### Output LINQ_4.cs
-![LINQaverage](LINQaverage/LINQ_4.PNG)
+![LINQaverage](LINQ_4.PNG)
