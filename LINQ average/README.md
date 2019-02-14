@@ -1,7 +1,7 @@
 #LINQ Queries (C#)
 ###All LINQ query operations consist of three distinct actions:
  *  1. Data source:
-```
+```c#
 List<Student> students = new List<Student>() {
                 new Student() { Country = "Spain", Name = "Zbych", Marks = 13, Faculty = 
 "Informatics"} ,
