@@ -53,3 +53,5 @@ foreach (var f in result3)
             Console.WriteLine("{0} \t  {1}", f.Country, f.AverageMarks);
         }
 ```
+ ### Output LINQ_4.cs
+ ### ![LINQaverage](LINQaverage/LINQ_4.PNG)
