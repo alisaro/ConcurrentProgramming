@@ -9,11 +9,13 @@ As is normal to wait, the result of time is less in part ParallelFor because dif
 calculate the multiplication in each iteration.
 In serial part the time is big because the same thread have to calculate the multiplication in each iteration.
 
-* PerfectNumber.cs with parallel for
-*
-*
-* Program3threads.cs multithreads
+* Threads_PerfectNumber.cs with threads
+  * This program calculate the fuction PerfectNumber showing the time that spent in this calculationin each threads
+* Tasks_PerfectNumber.cs with tasks
+  * This program calculate the fuction PerfectNumber showing the time that spent in this calculation in each threads or task
 
+* Program3threads.cs multithreads
+ 
 *countries.cs 
 ```c#
 var result = from c in Countries
