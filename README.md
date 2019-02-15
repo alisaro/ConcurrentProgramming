@@ -17,18 +17,18 @@ In serial part the time is big because the same thread have to calculate the mul
 
 * Program3threads.cs multithreads
 
-*ParallelFor_PerfectNumber.cs  Parallelism.For Loop
+* ParallelFor_PerfectNumber.cs  Parallelism.For Loop
   * This program calculate the fuction PerfectNumber showing the time that spent in this calculation in normal for loop and in parallel for loop
 
-* Countries.cs 
-```c#
-var result = from c in Countries
-            where (c.Continent == 
-theContinent) && (c.Population / c.Area > 
-theDensity)
-            orderby c.Population/c.Area 
-descending
-            select c;
-```
+* countries.cs 
+  * This program obtain the Data Base from a file named data.csv and keep this information in 
+IEnumerable Countries. After this the program does a LINQ Query where show the countries with density higher to 100 of a Continent (that we add like first parameter). Finally this program show the total of Countries that pass this condition instead of this Continent, and information about 
+this Counties like Name of the country, Population of this country, Area and Density
 
-![ForLoop](ForLoop/ForLoop.PNG)
+*countries2.cs
+  * This program obtain the Data Base from a file 
+named data.csv and keep this information in 
+IEnumerable Countries. After this the program does 
+a LINQ Query where show the countries with density 
+higher to of a Continent (that we add like first 
+parameter ). Finally this program show the total of Countries that pass this condition instead of this Continent, and information about this Counties like Name of the country, Population of this country, Area and Density
