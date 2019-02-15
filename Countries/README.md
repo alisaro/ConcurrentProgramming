@@ -2,7 +2,7 @@
 
  ### Version 1: countries.cs 
 
- > countries.exe <continent name>
+ > countries.exe continent_name
 
  > This program obtain the Data Base from a file 
 named data.csv and keep this information in IEnumerable<Country> Countries. 
@@ -64,7 +64,7 @@ foreach(Country c in result){
 
  ### Version 2: countries2.cs
 
- > countries.exe <continent name> <density>
+ > countries.exe continent_name density
 
  >This program obtain the Data Base from a file named data.csv and keep this information in IEnumerable<Country> Countries.
 After this the program does a LINQ Query where show the countries with density higher to <density> of a 
