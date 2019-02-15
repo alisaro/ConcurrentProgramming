@@ -4,7 +4,8 @@
 
  > countries.exe <continent name>
 
- >This program obtain the Data Base from a file named data.csv and keep this information in IEnumerable<Country> Countries. 
+ > This program obtain the Data Base from a file 
+named data.csv and keep this information in IEnumerable<Country> Countries. 
 After this the program does a LINQ Query where show the countries with density higher to 100 of a 
 Continent (that we add like first parameter). Finally this program show the total of Countries 
 that pass this condition instead of this Continent, and information about this Counties 
@@ -65,10 +66,8 @@ foreach(Country c in result){
 
  > countries.exe <continent name> <density>
 
- >This program obtain the Data Base from a file named data.csv and keep this information in 
-IEnumerable<Country> Countries.
-After this the program does a LINQ Query where 
-show the countries with density higher to <density> of a 
+ >This program obtain the Data Base from a file named data.csv and keep this information in IEnumerable<Country> Countries.
+After this the program does a LINQ Query where show the countries with density higher to <density> of a 
 Continent (that we add like first parameter <continent name>).
 Finally this program show the total of Countries that pass this condition instead of this 
 Continent, and information about this Counties like Name of the country, Population of this 
@@ -97,3 +96,18 @@ country, Area and Density
  #### Output countries2.cs
 
   ![Countries](countries2.PNG)
+
+ 
+  ### Version 3: countries3.cs
+
+ > countries.exe <continent name> <density>
+
+ >This program obtain the Data Base from a file
+named data.csv and keep this information in
+IEnumerable<Country> Countries.
+After this the program does a LINQ Query where
+show the countries with density higher to 
+<density> of a  Continent (that we add like first 
+parameter <continent name>).
+Finally this program show the total of Countries
+that pass this condition instead of this
