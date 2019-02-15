@@ -34,4 +34,13 @@ higher to of a Continent (that we add like first
 parameter ). Finally this program show the total of Countries that pass this condition instead of this Continent, and information about this Counties like Name of the country, Population of this country, Area and Density
 
 * countries3.cs
-  * 
+  * This program obtain the Data Base from a file 
+named data.csv and keep this information in IEnumerable Countries. After this the 
+program does a LINQ Query where show the countries with density higher to of a Continent (that we 
+add like first parameter ). This program show the total of Countries that pass 
+this condition instead of this Continent, and information about this Counties like Name 
+of the country, Population of this country, Area and Density
+This program show too the average population of 
+each continent
+ * Show the total population in the world
+ * Show the toal population by continent 
